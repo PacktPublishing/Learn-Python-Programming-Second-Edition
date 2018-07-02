@@ -93,7 +93,7 @@ He moved to London in 2011 to work for companies such as Glasses Direct, TBG/Spr
 
 He has given talks on Teaching Python and TDD at two editions of EuroPython, and at Skillsmatter and ProgSCon, in London.
 
-## Other books by the authors
+## Other book by the author
 [ Learning Python](https://www.packtpub.com/application-development/learning-python?utm_source=github&utm_medium=repository&utm_campaign=9781783551712 )
 
 ### Suggestions and Feedback
