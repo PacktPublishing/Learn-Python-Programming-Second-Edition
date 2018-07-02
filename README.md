@@ -61,7 +61,7 @@ run the following:
 This will read all the `.in` files and compile them together into the
 `all.txt` file.
 
-The code will look like the following:
+The sample code will look like the following:
 ```
 # we define a function, called local
 def local():
