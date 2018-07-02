@@ -1,0 +1,16 @@
+/* HTML tags */
+a { color: #333; }
+/* Classes */
+.footer { margin-top: 1em; color: #333; }
+.entries-table { border-spacing: 0; padding-top: 1em; }
+.entries-table thead { background-color: #333; color: #fff;
+    padding: 2em; font-size: 1.4em; }
+.entries-table td { padding: 1em; vertical-align: top; }
+.light-gray { background-color: #eee; }
+.white { background-color: #fff; }
+.code { font-size: 1.1em; font-weight: bolder; color: #333; }
+.home-option { padding: .6em 0; }
+/* Messages */
+.success, .errorlist {font-size: 1.2em; font-weight: bold; }
+.success {color: #25B725; }
+.errorlist {color: #B12B2B; }

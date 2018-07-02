@@ -1,0 +1,45 @@
+{% extends "entries/base.html" %}
+{% block title%} Entries list {% endblock title %}
+
+{% block page-content %}
+ {% if entries %}
+  <h1>Your entries ({{ entries|length }} found)</h1>
+  <div><a href="{% url "insert" %}">Insert new entry.</a></div>
+
+  <table class="entries-table">
+   <thead>
+     <tr><th>Entry</th><th>Matches</th></tr>
+   </thead>
+   <tbody>
+    {% for entry, match in entries %}
+     <tr class="entries-list {% cycle 'light-gray' 'white' %}">
+      <td>
+        Pattern: <code class="code">
+         "{{ entry.pattern }}"</code><br>
+        Test String: <code class="code">
+         "{{ entry.test_string }}"</code><br>
+        Added: {{ entry.date_added }}
+      </td>
+      <td>
+        {% if match %}
+         Group: {{ match.0 }}<br>
+         Subgroups:
+          {{ match.1|default_if_none:"none" }}<br>
+         Group Dict: {{ match.2|default_if_none:"none" }}
+        {% else %}
+         No matches found.
+        {% endif %}
+      </td>
+     </tr>
+    {% endfor %}
+   </tbody>
+  </table>
+ {% else %}
+  <h1>You have no entries</h1>
+  <div><a href="{% url "insert" %}">Insert new entry.</a></div>
+ {% endif %}
+{% endblock page-content %}
+
+{% block footer %}
+ {% include "entries/footer.html" %}
+{% endblock footer %}

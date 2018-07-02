@@ -1,0 +1,31 @@
+fabmp:srv fab$ # step 1 - create folder
+fabmp:srv fab$ mkdir learn.pp
+fabmp:srv fab$ cd learn.pp
+
+fabmp:learn.pp fab$ # step 2 - create virtual environment
+fabmp:learn.pp fab$ which python3.7
+/Users/fab/.pyenv/shims/python3.7
+fabmp:learn.pp fab$ virtualenv -p
+⇢ /Users/fab/.pyenv/shims/python3.7 learnpp
+Running virtualenv with interpreter /Users/fab/.pyenv/shims/python3.7
+Using base prefix '/Users/fab/.pyenv/versions/3.7.0a3'
+New python executable in /Users/fab/srv/learn.pp/learnpp/bin/python3.7
+Also creating executable in /Users/fab/srv/learn.pp/learnpp/bin/python
+Installing setuptools, pip, wheel...done.
+
+fabmp:learn.pp fab$ # step 3 - activate virtual environment
+fabmp:learn.pp fab$ source learnpp/bin/activate
+
+(learnpp) fabmp:learn.pp fab$ # step 4 - verify which python
+(learnpp) fabmp:learn.pp fab$ which python
+/Users/fab/srv/learn.pp/learnpp/bin/python
+
+(learnpp) fabmp:learn.pp fab$ python
+Python 3.7.0a3 (default, Jan 27 2018, 00:46:45)
+[Clang 9.0.0 (clang-900.0.39.2)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+
+(learnpp) fabmp:learn.pp fab$ # step 5 - deactivate
+(learnpp) fabmp:learn.pp fab$ deactivate
+fabmp:learn.pp fab$

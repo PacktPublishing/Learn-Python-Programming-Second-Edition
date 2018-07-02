@@ -1,0 +1,13 @@
+aiohttp
+beautifulsoup4
+cryptography
+django
+falcon
+flask
+gunicorn
+marshmallow
+pdbpp
+pyjwt
+pytest
+requests
+SQLAlchemy
